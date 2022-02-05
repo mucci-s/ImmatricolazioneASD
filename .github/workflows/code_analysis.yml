@@ -41,12 +41,12 @@ jobs:
       with:
         java-version: 17
     - name: Run pdm
-      run: mvn -B pdm:pdm
+      run: mvn -B pmd:pmd
     - name: Upload report
       uses: actions/upload-artifact@v2
       with:
-        name: pdm-report
-        path: target/pdm.xml
+        name: pmd-report
+        path: target/pmd.xml
         
 
   spotbugs:
