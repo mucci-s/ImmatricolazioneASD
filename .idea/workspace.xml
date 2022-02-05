@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bcacdf73-9465-4bfc-9f34-72e165e69fdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,8 +37,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="637">
+              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/lang/reflect/Method.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="579" column="18" selection-start-line="579" selection-start-column="18" selection-end-line="579" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -106,6 +116,7 @@
       <find>commen</find>
       <find>Java</find>
       <find>JavadocVariabl</find>
+      <find>spotbugs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,11 +160,17 @@
         <option value="$PROJECT_DIR$/target/cpd.xml" />
         <option value="$PROJECT_DIR$/target/checkstyle-checker.xml" />
         <option value="$PROJECT_DIR$/src/main/java/it/unimol/sm/Main.java" />
+        <option value="$PROJECT_DIR$/target/pmd/rulesets/maven-pmd-plugin-default.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -180,8 +197,7 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="ImmatricolazioneASD" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="spotbugs" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -211,24 +227,6 @@
               <item name="ImmatricolazioneASD" type="462c0819:PsiDirectoryNode" />
               <item name=".github" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ImmatricolazioneASD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImmatricolazioneASD" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImmatricolazioneASD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImmatricolazioneASD" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImmatricolazioneASD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImmatricolazioneASD" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="ImmatricolazioneASD_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -244,7 +242,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1644082508899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1644090629965" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
@@ -385,7 +383,7 @@
       <workItem from="1643996280306" duration="13794000" />
       <workItem from="1644015076334" duration="7299000" />
       <workItem from="1644028358518" duration="28000" />
-      <workItem from="1644061769703" duration="14420000" />
+      <workItem from="1644061769703" duration="21973000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1644072982939</created>
@@ -457,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644082024103</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="prova di commit">
+      <created>1644082524790</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1644082524790</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -490,7 +495,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79581000" />
+    <option name="totallyTimeSpent" value="87134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,16 +509,17 @@
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21002132" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1663113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33440515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.21007502" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -521,16 +527,17 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.59699893" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.301179" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.301179" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3290461" />
+      <window_info anchor="right" id="CDI" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.141258" />
+      <window_info active="true" anchor="right" id="Maven" order="6" visible="true" weight="0.141258" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
@@ -812,83 +819,11 @@
     <entry file="file://$PROJECT_DIR$/target/checkstyle-cachefile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/cpd.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/pmd.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/spotbugsXml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#17331#17335#0" expanded="true" />
-            <element signature="e#17336#17340#0" expanded="true" />
-            <element signature="e#17491#17495#0" expanded="true" />
-            <element signature="e#17497#17501#0" expanded="true" />
-            <element signature="e#17673#17677#0" expanded="true" />
-            <element signature="e#17678#17682#0" expanded="true" />
-            <element signature="e#17990#17994#0" expanded="true" />
-            <element signature="e#17996#18000#0" expanded="true" />
-            <element signature="e#18208#18212#0" expanded="true" />
-            <element signature="e#18213#18217#0" expanded="true" />
-            <element signature="e#18239#18243#0" expanded="true" />
-            <element signature="e#18247#18251#0" expanded="true" />
-            <element signature="e#18265#18269#0" expanded="true" />
-            <element signature="e#18274#18278#0" expanded="true" />
-            <element signature="e#18304#18308#0" expanded="true" />
-            <element signature="e#18312#18316#0" expanded="true" />
-            <element signature="e#18326#18330#0" expanded="true" />
-            <element signature="e#18335#18339#0" expanded="true" />
-            <element signature="e#18378#18382#0" expanded="true" />
-            <element signature="e#18386#18390#0" expanded="true" />
-            <element signature="e#18400#18404#0" expanded="true" />
-            <element signature="e#18409#18413#0" expanded="true" />
-            <element signature="e#18419#18423#0" expanded="true" />
-            <element signature="e#18427#18431#0" expanded="true" />
-            <element signature="e#18447#18451#0" expanded="true" />
-            <element signature="e#18456#18460#0" expanded="true" />
-            <element signature="e#18557#18562#0" expanded="true" />
-            <element signature="e#18676#18680#0" expanded="true" />
-            <element signature="e#18682#18686#0" expanded="true" />
-            <element signature="e#18688#18692#0" expanded="true" />
-            <element signature="e#18693#18697#0" expanded="true" />
-            <element signature="e#18804#18808#0" expanded="true" />
-            <element signature="e#18812#18816#0" expanded="true" />
-            <element signature="e#18824#18828#0" expanded="true" />
-            <element signature="e#18833#18837#0" expanded="true" />
-            <element signature="e#18863#18867#0" expanded="true" />
-            <element signature="e#18869#18873#0" expanded="true" />
-            <element signature="e#18874#18878#0" expanded="true" />
-            <element signature="e#18881#18885#0" expanded="true" />
-            <element signature="e#18885#18889#0" expanded="true" />
-            <element signature="e#18893#18897#0" expanded="true" />
-            <element signature="e#19016#19020#0" expanded="true" />
-            <element signature="e#19025#19029#0" expanded="true" />
-            <element signature="e#19029#19033#0" expanded="true" />
-            <element signature="e#19037#19041#0" expanded="true" />
-            <element signature="e#19226#19230#0" expanded="true" />
-            <element signature="e#19231#19235#0" expanded="true" />
-            <element signature="e#19487#19491#0" expanded="true" />
-            <element signature="e#19493#19497#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/checkstyle.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1911">
           <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/pmd/rulesets/maven-pmd-plugin-default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/checkstyle-checker.xml">
@@ -927,13 +862,263 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="579" column="18" selection-start-line="579" selection-start-column="18" selection-end-line="579" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/spotbugs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/spotbugsXml.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://MAVEN/it.unimol.sm:ImmatricolazioneASD:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>it.unimol.sm:ImmatricolazioneASD:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">it.unimol.sm:ImmatricolazioneASD:1.0-SNAPSHOT</node>
+            <node x="" y="">org.junit.jupiter:junit-jupiter-api:jar:5.7.2</node>
+            <node x="" y="">org.junit.jupiter:junit-jupiter-api:jar:5.7.2/org.apiguardian:apiguardian-api:jar:1.1.0</node>
+            <node x="" y="">org.junit.jupiter:junit-jupiter-api:jar:5.7.2/org.opentest4j:opentest4j:jar:1.2.0</node>
+            <node x="" y="">org.junit.jupiter:junit-jupiter-api:jar:5.7.2/org.junit.platform:junit-platform-commons:jar:1.7.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/org.ow2.asm:asm:jar:6.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/org.ow2.asm:asm-analysis:jar:6.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/org.ow2.asm:asm-commons:jar:6.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/org.ow2.asm:asm-tree:jar:6.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/org.ow2.asm:asm-util:jar:6.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/org.ow2.asm:asm-xml:jar:6.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/org.apache.bcel:bcel:jar:6.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/net.jcip:jcip-annotations:jar:1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/dom4j:dom4j:jar:1.6.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/jaxen:jaxen:jar:1.1.6</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/com.google.code.findbugs:jFormatString:jar:3.0.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/com.github.spotbugs:spotbugs-annotations:jar:3.1.0-RC6</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/com.github.spotbugs:spotbugs:jar:3.1.0-RC6/com.github.spotbugs:spotbugs-annotations:jar:3.1.0-RC6/com.google.code.findbugs:jsr305:jar:3.0.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.ant:ant:jar:1.9.9</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.ant:ant:jar:1.9.9/org.apache.ant:ant-launcher:jar:1.9.9</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy:jar:2.4.12</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-ant:jar:2.4.12</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-ant:jar:2.4.12/org.apache.ant:ant-launcher:jar:1.9.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-ant:jar:2.4.12/org.apache.ant:ant-antlr:jar:1.9.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-ant:jar:2.4.12/org.apache.ant:ant-junit:jar:1.9.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-ant:jar:2.4.12/org.apache.ant:ant-junit:jar:1.9.4/org.apache.ant:ant:jar:1.9.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-ant:jar:2.4.12/org.codehaus.groovy:groovy-groovydoc:jar:2.4.12</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-ant:jar:2.4.12/org.codehaus.groovy:groovy-groovydoc:jar:2.4.12/org.codehaus.groovy:groovy-templates:jar:2.4.12</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-ant:jar:2.4.12/org.apache.ant:ant:jar:1.9.9</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.groovy:groovy-xml:jar:2.4.12</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-model:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-settings:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-settings-builder:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-settings-builder:jar:3.0/org.codehaus.plexus:plexus-utils:jar:2.0.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-settings-builder:jar:3.0/org.codehaus.plexus:plexus-interpolation:jar:1.14</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-settings-builder:jar:3.0/org.codehaus.plexus:plexus-component-annotations:jar:1.5.5</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-settings-builder:jar:3.0/org.apache.maven:maven-settings:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-repository-metadata:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-repository-metadata:jar:3.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-artifact:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-plugin-api:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-model-builder:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-aether-provider:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-aether-provider:jar:3.0/org.apache.maven:maven-model-builder:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.apache.maven:maven-aether-provider:jar:3.0/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.aether:aether-impl:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.aether:aether-impl:jar:1.7/org.sonatype.aether:aether-spi:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.aether:aether-api:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.aether:aether-util:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2/org.codehaus.plexus:plexus-component-annotations:jar:1.5.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2/org.codehaus.plexus:plexus-classworlds:jar:2.2.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2/org.sonatype.sisu:sisu-inject-bean:jar:1.4.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2/org.sonatype.sisu:sisu-inject-bean:jar:1.4.2/org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.codehaus.plexus:plexus-interpolation:jar:1.24</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.codehaus.plexus:plexus-classworlds:jar:2.5.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3/org.codehaus.plexus:plexus-utils:jar:1.5.5</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-core:jar:3.0/org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3/org.sonatype.plexus:plexus-cipher:jar:1.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven:maven-plugin-api:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven.shared:maven-shared-utils:jar:3.2.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven.shared:maven-shared-utils:jar:3.2.0/commons-io:commons-io:jar:2.5</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-impl:jar:3.0.0/org.codehaus.plexus:plexus-utils:jar:3.0.24</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-api:jar:3.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.reporting:maven-reporting-api:jar:3.0/org.apache.maven.doxia:doxia-sink-api:jar:1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.apache.maven:maven-model:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.apache.maven:maven-model:jar:3.5.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3/javax.enterprise:cdi-api:jar:1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3/javax.enterprise:cdi-api:jar:1.0/javax.annotation:jsr250-api:jar:1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3/javax.enterprise:cdi-api:jar:1.0/javax.inject:javax.inject:jar:1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3/org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3/org.codehaus.plexus:plexus-classworlds:jar:2.5.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-plugin-api:jar:3.5.0/org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3/org.codehaus.plexus:plexus-utils:jar:3.0.17</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-model-builder:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-model-builder:jar:3.5.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-model-builder:jar:3.5.0/org.apache.maven:maven-builder-support:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-model-builder:jar:3.5.0/org.apache.maven:maven-builder-support:jar:3.5.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-model-builder:jar:3.5.0/com.google.guava:guava:jar:20.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-settings:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-settings:jar:3.5.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-core:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-resolver-provider:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-resolver-provider:jar:3.5.0/org.apache.maven:maven-repository-metadata:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-resolver-provider:jar:3.5.0/org.apache.maven.resolver:maven-resolver-spi:jar:1.0.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven:maven-resolver-provider:jar:3.5.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven.resolver:maven-resolver-api:jar:1.0.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven.resolver:maven-resolver-util:jar:1.0.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven.resolver:maven-resolver-impl:jar:1.0.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.codehaus.plexus:plexus-interpolation:jar:1.24</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven.wagon:wagon-provider-api:jar:2.12</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-compat:jar:3.5.0/org.apache.maven.wagon:wagon-provider-api:jar:2.12/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-artifact:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-artifact:jar:3.5.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven:maven-artifact:jar:3.5.0/org.apache.commons:commons-lang3:jar:3.5</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.apache.maven.doxia:doxia-logging-api:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.apache.maven.doxia:doxia-logging-api:jar:1.7/org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.codehaus.plexus:plexus-utils:jar:3.0.22</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.codehaus.plexus:plexus-container-default:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/commons-lang:commons-lang:jar:2.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.apache.httpcomponents:httpclient:jar:4.0.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.apache.httpcomponents:httpclient:jar:4.0.2/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.apache.httpcomponents:httpclient:jar:4.0.2/commons-codec:commons-codec:jar:1.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/org.apache.httpcomponents:httpcore:jar:4.0.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-core:jar:1.7/xmlunit:xmlunit:jar:1.5</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-sink-api:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-decoration-model:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-decoration-model:jar:1.7/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-decoration-model:jar:1.7/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven:maven-artifact:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-skin-model:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-skin-model:jar:1.7/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-skin-model:jar:1.7/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-module-xhtml:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-module-xhtml:jar:1.7/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-module-xhtml:jar:1.7/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-module-fml:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-module-fml:jar:1.7/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.maven.doxia:doxia-module-fml:jar:1.7/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7/org.codehaus.plexus:plexus-utils:jar:1.4.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.codehaus.plexus:plexus-velocity:jar:1.1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity:jar:1.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity:jar:1.7/commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-beanutils:commons-beanutils:jar:1.7.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-beanutils:commons-beanutils:jar:1.7.0/commons-logging:commons-logging:jar:1.0.3</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-digester:commons-digester:jar:1.8</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-digester:commons-digester:jar:1.8/commons-logging:commons-logging:jar:1.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-chain:commons-chain:jar:1.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-chain:commons-chain:jar:1.1/commons-digester:commons-digester:jar:1.6</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-chain:commons-chain:jar:1.1/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-collections:commons-collections:jar:3.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-validator:commons-validator:jar:1.3.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-validator:commons-validator:jar:1.3.1/commons-digester:commons-digester:jar:1.8</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/commons-validator:commons-validator:jar:1.3.1/commons-logging:commons-logging:jar:1.0.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/dom4j:dom4j:jar:1.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/oro:oro:jar:2.0.8</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/sslext:sslext:jar:1.2-0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/org.apache.struts:struts-core:jar:1.3.8</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/org.apache.struts:struts-core:jar:1.3.8/antlr:antlr:jar:2.7.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/org.apache.struts:struts-core:jar:1.3.8/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/org.apache.struts:struts-taglib:jar:1.3.8</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/org.apache.struts:struts-tiles:jar:1.3.8</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.apache.velocity:velocity-tools:jar:2.0/org.apache.velocity:velocity:jar:1.6.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/commons-collections:commons-collections:jar:3.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.doxia:doxia-site-renderer:jar:1.7/org.codehaus.plexus:plexus-component-annotations:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/commons-io:commons-io:jar:1.4</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-artifact:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-artifact-manager:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-artifact-manager:jar:2.2.1/org.apache.maven:maven-repository-metadata:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-artifact-manager:jar:2.2.1/org.codehaus.plexus:plexus-utils:jar:1.5.15</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-artifact-manager:jar:2.2.1/org.apache.maven:maven-artifact:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-artifact-manager:jar:2.2.1/org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-artifact-manager:jar:2.2.1/backport-util-concurrent:backport-util-concurrent:jar:3.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-model:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-settings:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-profile:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-profile:jar:2.2.1/org.apache.maven:maven-model:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-profile:jar:2.2.1/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-profile:jar:2.2.1/org.codehaus.plexus:plexus-interpolation:jar:1.11</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-model:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-plugin-registry:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-plugin-registry:jar:2.2.1/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.codehaus.plexus:plexus-interpolation:jar:1.24</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-project:jar:2.2.1/org.apache.maven:maven-artifact:jar:3.5.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven:maven-plugin-api:jar:2.2.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven.doxia:doxia-logging-api:jar:1.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.apache.maven.doxia:doxia-decoration-model:jar:1.2</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.apache.maven.shared:maven-doxia-tools:jar:1.4/org.codehaus.plexus:plexus-interpolation:jar:1.24</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.plexus:plexus-container-default:jar:1.7.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.plexus:plexus-container-default:jar:1.7.1/org.codehaus.plexus:plexus-utils:jar:3.0.20</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.plexus:plexus-container-default:jar:1.7.1/org.codehaus.plexus:plexus-classworlds:jar:2.5.1</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.plexus:plexus-container-default:jar:1.7.1/org.apache.xbean:xbean-reflect:jar:3.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.plexus:plexus-container-default:jar:1.7.1/com.google.collections:google-collections:jar:1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.plexus:plexus-resources:jar:1.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.plexus:plexus-resources:jar:1.1.0/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.codehaus.plexus:plexus-utils:jar:3.1.0</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.sonatype.plexus:plexus-build-api:jar:0.0.7</node>
+            <node x="" y="">com.github.spotbugs:spotbugs-maven-plugin:jar:3.1.0-RC6/org.sonatype.plexus:plexus-build-api:jar:0.0.7/org.codehaus.plexus:plexus-utils:jar:1.5.8</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.10000000000000014" x="5669.999999999991" y="1623.9999999999964" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/pmd/rulesets/maven-pmd-plugin-default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/target/checkstyle-result.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/pmd.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/cpd.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="637">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
         </state>
       </provider>
     </entry>
