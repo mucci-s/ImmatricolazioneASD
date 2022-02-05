@@ -11,6 +11,7 @@ public class Main {
 
     private static void init(){
         //MenuPrincipaleUI menu = MenuPrincipaleUI.getInstance();provas pipelines
+        System.out.println("asd");
         MenuFrame.main(new String[]{});
         //menu.esegui();
     }
