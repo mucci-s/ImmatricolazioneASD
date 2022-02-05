@@ -38,8 +38,7 @@ jobs:
       with:
         java-version: 17
     - name: Run spotbugs
-      run: mvn site 
-           mvn spotbugs:spotbugs
+      run: mvn -B site spotbugs:spotbugs
     - name: Upload report
       uses: actions/upload-artifact@v2
       with:
