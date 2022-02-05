@@ -10,7 +10,7 @@ public class Main {
     }
 
     private static void init(){
-        //MenuPrincipaleUI menu = MenuPrincipaleUI.getInstance();prova commit
+        //MenuPrincipaleUI menu = MenuPrincipaleUI.getInstance();
         MenuFrame.main(new String[]{});
         //menu.esegui();
     }
