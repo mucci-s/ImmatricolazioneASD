@@ -40,4 +40,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: artifact
-        path: target/ImmatricolazioneASD_ex.jar
+        path: target/ImmatricolazioneASD-1.0-SNAPSHOT.jar
