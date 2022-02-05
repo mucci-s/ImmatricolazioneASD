@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcacdf73-9465-4bfc-9f34-72e165e69fdd" name="Default Changelist" comment="first commit" />
+    <list default="true" id="bcacdf73-9465-4bfc-9f34-72e165e69fdd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,64 +34,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/spotbugsXml.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/checkstyle-result.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1071">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/cpd.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/pmd.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-252" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/unimol/sm/ui/MenuPrincipaleUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="813">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/unimol/sm/ui/ImmatricolazioneUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="813">
-              <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="74" column="25" selection-start-line="57" selection-start-column="16" selection-end-line="74" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/unimol/sm/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#164#165#0" expanded="true" />
@@ -99,22 +58,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/unimol/sm/GUI/InserimantoProprietarioGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2421">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checkstyle.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+            <state relative-caret-position="1911">
+              <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -151,6 +98,8 @@
       <find>AnnotationOnSameLine</find>
       <find>SeparatorWrap</find>
       <find>commen</find>
+      <find>Java</find>
+      <find>JavadocVariabl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,9 +140,10 @@
         <option value="$PROJECT_DIR$/src/main/java/it/unimol/sm/ui/MenuPrincipaleUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/unimol/sm/ui/UI.java" />
         <option value="$PROJECT_DIR$/checkstyle.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/target/cpd.xml" />
         <option value="$PROJECT_DIR$/src/main/java/it/unimol/sm/Main.java" />
+        <option value="$PROJECT_DIR$/target/checkstyle-checker.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -220,6 +170,18 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="ImmatricolazioneASD" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ImmatricolazioneASD" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ImmatricolazioneASD" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="site" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
       </expand>
       <select />
@@ -285,7 +247,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1644072913570" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1644077479863" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
@@ -426,8 +388,16 @@
       <workItem from="1643996280306" duration="13794000" />
       <workItem from="1644015076334" duration="7299000" />
       <workItem from="1644028358518" duration="28000" />
-      <workItem from="1644061769703" duration="6532000" />
+      <workItem from="1644061769703" duration="9761000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1644072982939</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644072982939</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -460,7 +430,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71693000" />
+    <option name="totallyTimeSpent" value="74922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,7 +453,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.39121115" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.34512326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -491,7 +461,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6677385" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4737406" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.301179" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -500,7 +470,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.15191898" />
+      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.141258" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
@@ -615,9 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/checkstyle-cachefile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/it/unimol/sm/app/automobile/AutomobileTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -726,24 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/checkstyle-checker.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/unimol/sm/ui/UI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -794,28 +747,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/spotbugsXml.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/unimol/sm/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/checkstyle-result.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstyle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/target/checkstyle-cachefile">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/pmd.xml">
+    <entry file="file://$PROJECT_DIR$/target/checkstyle-checker.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252" />
+        <state>
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/cpd.xml">
@@ -825,15 +776,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/unimol/sm/Main.java">
+    <entry file="file://$PROJECT_DIR$/target/pmd.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/spotbugsXml.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#17331#17335#0" expanded="true" />
+            <element signature="e#17336#17340#0" expanded="true" />
+            <element signature="e#17491#17495#0" expanded="true" />
+            <element signature="e#17497#17501#0" expanded="true" />
+            <element signature="e#17673#17677#0" expanded="true" />
+            <element signature="e#17678#17682#0" expanded="true" />
+            <element signature="e#17990#17994#0" expanded="true" />
+            <element signature="e#17996#18000#0" expanded="true" />
+            <element signature="e#18208#18212#0" expanded="true" />
+            <element signature="e#18213#18217#0" expanded="true" />
+            <element signature="e#18239#18243#0" expanded="true" />
+            <element signature="e#18247#18251#0" expanded="true" />
+            <element signature="e#18265#18269#0" expanded="true" />
+            <element signature="e#18274#18278#0" expanded="true" />
+            <element signature="e#18304#18308#0" expanded="true" />
+            <element signature="e#18312#18316#0" expanded="true" />
+            <element signature="e#18326#18330#0" expanded="true" />
+            <element signature="e#18335#18339#0" expanded="true" />
+            <element signature="e#18378#18382#0" expanded="true" />
+            <element signature="e#18386#18390#0" expanded="true" />
+            <element signature="e#18400#18404#0" expanded="true" />
+            <element signature="e#18409#18413#0" expanded="true" />
+            <element signature="e#18419#18423#0" expanded="true" />
+            <element signature="e#18427#18431#0" expanded="true" />
+            <element signature="e#18447#18451#0" expanded="true" />
+            <element signature="e#18456#18460#0" expanded="true" />
+            <element signature="e#18557#18562#0" expanded="true" />
+            <element signature="e#18676#18680#0" expanded="true" />
+            <element signature="e#18682#18686#0" expanded="true" />
+            <element signature="e#18688#18692#0" expanded="true" />
+            <element signature="e#18693#18697#0" expanded="true" />
+            <element signature="e#18804#18808#0" expanded="true" />
+            <element signature="e#18812#18816#0" expanded="true" />
+            <element signature="e#18824#18828#0" expanded="true" />
+            <element signature="e#18833#18837#0" expanded="true" />
+            <element signature="e#18863#18867#0" expanded="true" />
+            <element signature="e#18869#18873#0" expanded="true" />
+            <element signature="e#18874#18878#0" expanded="true" />
+            <element signature="e#18881#18885#0" expanded="true" />
+            <element signature="e#18885#18889#0" expanded="true" />
+            <element signature="e#18893#18897#0" expanded="true" />
+            <element signature="e#19016#19020#0" expanded="true" />
+            <element signature="e#19025#19029#0" expanded="true" />
+            <element signature="e#19029#19033#0" expanded="true" />
+            <element signature="e#19037#19041#0" expanded="true" />
+            <element signature="e#19226#19230#0" expanded="true" />
+            <element signature="e#19231#19235#0" expanded="true" />
+            <element signature="e#19487#19491#0" expanded="true" />
+            <element signature="e#19493#19497#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstyle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1911">
+          <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/checkstyle-result.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="74" column="25" selection-start-line="57" selection-start-column="16" selection-end-line="74" selection-end-column="25" />
         </state>
       </provider>
     </entry>
