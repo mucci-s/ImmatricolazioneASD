@@ -87,7 +87,8 @@ public class ImmatricolaGUI extends JFrame {
         JButton btnBack = new JButton("Back");
         btnBack.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                MenuFrame.main(new String[]{});
+                new MenuFrame();
+                // MenuFrame.main(new String[]{});
                 frame.dispose();
             }
         });

@@ -17,17 +17,18 @@ public class MenuFrame extends JFrame {
     private JPanel contentPane;
 
 
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-
-                    frame= new MenuFrame();
-                    frame.setVisible(true);
-            }
-        });
-    }
+//    public static void main(String[] args) {
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//
+//                    frame= new MenuFrame();
+//                    frame.setVisible(true);
+//            }
+//        });
+//    }
 
     public MenuFrame() {
+
 
         this.setTitle("Menu immatricolazione");
         this.setResizable(false);

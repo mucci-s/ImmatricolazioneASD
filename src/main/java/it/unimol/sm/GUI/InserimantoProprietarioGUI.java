@@ -81,14 +81,16 @@ public class InserimantoProprietarioGUI extends JFrame {
                         JOptionPane.showMessageDialog(InserimantoProprietarioGUI.this,
                                 "L'immatricolazione dell'auto è avvenuta con successo,con targa: \n"
                                         + autovett.getTarga(),"Auto immatricolata!", JOptionPane.ERROR_MESSAGE);
-                        MenuFrame.main(new String[]{});
+                        //MenuFrame.main(new String[]{});
+                        new MenuFrame();
                         frame.dispose();
                     }
                     else{
                         JOptionPane.showMessageDialog(InserimantoProprietarioGUI.this,
                                 "C'è stato un errore nell'immatricolazione dell'auto","Errore!",
                                 JOptionPane.ERROR_MESSAGE);
-                        MenuFrame.main(new String[]{});
+                        //MenuFrame.main(new String[]{});
+                        new MenuFrame();
                         frame.dispose();
                     }
 

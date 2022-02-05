@@ -126,7 +126,8 @@ public class CheckTargaGUI extends JFrame {
         btnBack.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MenuFrame.main(new String[]{});
+                //MenuFrame.main(new String[]{});
+                new MenuFrame();
                 frame.dispose();
             }
         });
