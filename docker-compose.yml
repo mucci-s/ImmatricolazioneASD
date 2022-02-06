@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  immatricolazione_build:
+    build: ""
+    environment:
+      DISPLAY: "172.23.240.1:0.0"
+volumes:
+  esdata01:
+    driver: local

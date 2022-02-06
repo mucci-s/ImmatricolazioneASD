@@ -37,12 +37,13 @@ public class MenuFrame extends JFrame {
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
+        this.setVisible(true);
 
         JButton btnImmatricola = new JButton("Immatricola Auto");
         btnImmatricola.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                ImmatricolaGUI.main(new String[]{});
-                frame.dispose();
+                new ImmatricolaGUI();
+                MenuFrame.this.setVisible(false);
             }
         });
         btnImmatricola.setFont(new Font("Tahoma", Font.PLAIN, 15));
@@ -50,8 +51,9 @@ public class MenuFrame extends JFrame {
         JButton btnShowListAuto = new JButton("Visualizza auto Immatricolate");
         btnShowListAuto.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
-                VisualizzaAutoGUI.main(new String[]{});
-                frame.dispose();
+                new VisualizzaAutoGUI();
+                MenuFrame.this.setVisible(false);
+//                frame.dispose();
 
             }
         });
@@ -61,8 +63,9 @@ public class MenuFrame extends JFrame {
         JButton btnCheckTarga = new JButton("Controlla Targa Auto");
         btnCheckTarga.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                CheckTargaGUI.main(new String[]{});
-                frame.dispose();
+                new CheckTargaGUI();
+                MenuFrame.this.setVisible(false);
+//                frame.dispose();
             }
         });
         btnCheckTarga.setFont(new Font("Tahoma", Font.PLAIN, 15));
@@ -125,51 +128,4 @@ public class MenuFrame extends JFrame {
 
 
     }
-
-
-
-
-//    public void createFrame() {
-//        this.setTitle("Menu");
-//        this.setSize(600, 600);
-//        this.setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
-//        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-//
-//
-//        this.jPanel = new JPanel();
-//        this.jPanel.setSize(300, 300);
-//        this.jPanel.setAlignmentX(CENTER_ALIGNMENT);
-//        this.jPanel.setLayout(new FlowLayout());
-//        this.add(this.jPanel);
-//        Border padding = BorderFactory.createEmptyBorder(100, 10, 10, 10);
-//        this.jPanel.setBorder(padding);
-//
-//
-//        this.addRecipeButton.setAlignmentX(CENTER_ALIGNMENT);
-//        this.jPanel.add(this.addRecipeButton);
-//
-//
-//        this.viewRecipesButton.setAlignmentX(CENTER_ALIGNMENT);
-//        this.jPanel.add(this.viewRecipesButton);
-//
-//        addActionListeners();
-//
-//
-//        this.setVisible(true);
-//
-//    }
-
-
-
-
-
-
-//    private void loadFile() {
-//        try {
-//            RecipeHandler.getInstance().loadRecipes();
-//        } catch (IOException e) {
-//            JOptionPane.showMessageDialog(null, e.getMessage());
-//
-//        }
-//    }
 }

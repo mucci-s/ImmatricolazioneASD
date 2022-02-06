@@ -20,23 +20,22 @@ public class CheckTargaGUI extends JFrame {
     private JLabel lblTarga;
     private JTextField fldTarga;
 
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                    frame = new CheckTargaGUI();
-                    frame.setVisible(true);
-            }
-        });
-    }
+//    public static void main(String[] args) {
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                    frame = new CheckTargaGUI();
+//                    frame.setVisible(true);
+//            }
+//        });
+//    }
 
     public CheckTargaGUI(){
-
-
-
         this.setTitle("RICERCA TARGA");
         this.setSize(300, 570);
         this.setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setVisible(true);
+
 
 
         this.contentPane = new JPanel();
@@ -128,7 +127,7 @@ public class CheckTargaGUI extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 //MenuFrame.main(new String[]{});
                 new MenuFrame();
-                frame.dispose();
+                CheckTargaGUI.this.setVisible(false);
             }
         });
 

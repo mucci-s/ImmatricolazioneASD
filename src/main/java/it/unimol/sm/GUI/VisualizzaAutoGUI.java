@@ -16,16 +16,16 @@ public class VisualizzaAutoGUI extends JFrame {
     private JPanel contentPane;
 
 
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-
-                frame = new VisualizzaAutoGUI();
-                frame.setVisible(true);
-
-            }
-        });
-    }
+//    public static void main(String[] args) {
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//
+//                frame = new VisualizzaAutoGUI();
+//                frame.setVisible(true);
+//
+//            }
+//        });
+//    }
 
 
     public VisualizzaAutoGUI() {
@@ -35,6 +35,7 @@ public class VisualizzaAutoGUI extends JFrame {
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
+        this.setVisible(true);
         String[][] data = new String[GestoreApp.getInstance().getListAutomobili().size()][3];
 
         for (int i = 0; i < GestoreApp.getInstance().getListAutomobili().size(); i++) {
@@ -66,7 +67,7 @@ public class VisualizzaAutoGUI extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 //MenuFrame.main(new String[]{});
                 new MenuFrame();
-                frame.dispose();
+                VisualizzaAutoGUI.this.setVisible(false);
             }
         });
 

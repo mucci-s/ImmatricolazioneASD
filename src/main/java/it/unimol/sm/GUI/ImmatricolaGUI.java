@@ -17,16 +17,16 @@ public class ImmatricolaGUI extends JFrame {
     private JTextField fldCilindrata;
     private JTextField fldPotenza;
 
-
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                frame = new ImmatricolaGUI();
-                frame.setVisible(true);
-
-            }
-        });
-    }
+//
+//    public static void main(String[] args) {
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                frame = new ImmatricolaGUI();
+//                frame.setVisible(true);
+//
+//            }
+//        });
+//    }
 
 
     public ImmatricolaGUI() {
@@ -36,6 +36,7 @@ public class ImmatricolaGUI extends JFrame {
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
+        this.setVisible(true);
 
         JLabel lblAddLibrarian = new JLabel("DATI AUTO");
         lblAddLibrarian.setForeground(Color.DARK_GRAY);
@@ -77,7 +78,7 @@ public class ImmatricolaGUI extends JFrame {
                 auto[4] = fldPotenza.getText();
 
 
-                InserimantoProprietarioGUI.main(new String[]{}, auto);
+                new InserimantoProprietarioGUI(auto);
                 frame.dispose();
 
             }
@@ -89,7 +90,7 @@ public class ImmatricolaGUI extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 new MenuFrame();
                 // MenuFrame.main(new String[]{});
-                frame.dispose();
+                ImmatricolaGUI.this.setVisible(false);
             }
         });
         GroupLayout gl_contentPane = new GroupLayout(contentPane);

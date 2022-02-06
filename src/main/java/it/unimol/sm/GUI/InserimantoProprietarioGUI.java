@@ -21,15 +21,15 @@ public class InserimantoProprietarioGUI extends JFrame {
     private JTextField fldNascita;
     private JTextField fldPatente;
 
-    public static void main(String[] args, String[] auto) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                    frame = new InserimantoProprietarioGUI(auto);
-                    frame.setVisible(true);
-
-            }
-        });
-    }
+//    public static void main(String[] args, String[] auto) {
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                    frame = new InserimantoProprietarioGUI(auto);
+//                    frame.setVisible(true);
+//
+//            }
+//        });
+//    }
 
 
 
@@ -41,6 +41,7 @@ public class InserimantoProprietarioGUI extends JFrame {
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
+        this.setVisible(true);
 
         JLabel lblAddLibrarian = new JLabel("Dati Proprietario");
         lblAddLibrarian.setForeground(Color.DARK_GRAY);
@@ -83,7 +84,7 @@ public class InserimantoProprietarioGUI extends JFrame {
                                         + autovett.getTarga(),"Auto immatricolata!", JOptionPane.ERROR_MESSAGE);
                         //MenuFrame.main(new String[]{});
                         new MenuFrame();
-                        frame.dispose();
+                        InserimantoProprietarioGUI.this.setVisible(false);
                     }
                     else{
                         JOptionPane.showMessageDialog(InserimantoProprietarioGUI.this,
@@ -91,7 +92,7 @@ public class InserimantoProprietarioGUI extends JFrame {
                                 JOptionPane.ERROR_MESSAGE);
                         //MenuFrame.main(new String[]{});
                         new MenuFrame();
-                        frame.dispose();
+                        InserimantoProprietarioGUI.this.setVisible(false);
                     }
 
                 } catch (DataFormatException err) {
@@ -108,8 +109,8 @@ public class InserimantoProprietarioGUI extends JFrame {
         JButton btnBack = new JButton("Back");
         btnBack.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                ImmatricolaGUI.main(new String[]{});
-                frame.dispose();
+                new ImmatricolaGUI();
+                InserimantoProprietarioGUI.this.setVisible(false);
             }
         });
         GroupLayout gl_contentPane = new GroupLayout(contentPane);
