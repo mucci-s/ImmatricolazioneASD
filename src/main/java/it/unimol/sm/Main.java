@@ -10,13 +10,8 @@ public class Main {
     }
 
     private static void init(){
-        //MenuPrincipaleUI menu = MenuPrincipaleUI.getInstance();provas pipelines
-//        MenuFrame.main(new String[]{});
-
         MenuFrame frame = new MenuFrame();
         frame.setVisible(true);
 
-
-        //menu.esegui();
     }
 }
