@@ -31,7 +31,7 @@ public class CheckTargaGUI extends JFrame {
 
     public CheckTargaGUI(){
         this.setTitle("RICERCA TARGA");
-        this.setSize(300, 570);
+        this.setBounds(100,100,300,570);
         this.setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
@@ -181,17 +181,6 @@ public class CheckTargaGUI extends JFrame {
         contentPane.add(lblCilindrata);
         contentPane.add(lblPotenza);
         contentPane.add(lblDataImmatricolazione);
-
-
-
-
-
-
-
-
-
-
-
 
 
 

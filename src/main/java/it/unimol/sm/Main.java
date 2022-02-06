@@ -15,7 +15,7 @@ public class Main {
 
         MenuFrame frame = new MenuFrame();
         frame.setVisible(true);
-        System.out.println("prova");
+
 
         //menu.esegui();
     }
